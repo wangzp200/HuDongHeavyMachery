@@ -62,9 +62,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\NPOI.dll</HintPath>
     </Reference>
-    <Reference Include="SAPBusinessOneSDK, Version=1.0.0.1, Culture=neutral, PublicKeyToken=c7c3cb60e45d119f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\SAP\SAP Business One\SAPBusinessOneSDK.dll</HintPath>
+    <Reference Include="SAPBusinessOneSDK">
+      <HintPath>..\..\..\SAPBusinessOneSDK.dll</HintPath>
     </Reference>
     <Reference Include="SwissAddonFramework, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
