@@ -1,0 +1,98 @@
+﻿
+                    //for (int i = 0; i < DTL1.Rows.Count; i++)
+                    //{
+                    //    var code = DTL1.GetValue("Code", i).ToString();
+                    //    var sql = "SELECT \"Code\" FROM \"@COR020000\" WHERE \"Code\"='" + code + "'";
+                    //    TmpTable.ExecuteQuery(sql);
+                    //    if (!TmpTable.IsEmpty)
+                    //    {
+                    //        progressBar.Text = "正在更新:" + code;
+                    //        code = TmpTable.GetValue("Code", 0).ToString();
+                    //        oGeneralParams.SetProperty("Code", code);
+                    //        oGeneralData = generalService.GetByParams(oGeneralParams);
+                    //        for (int j = 0; j < dTL1column.Length; j++)
+                    //        {
+                    //            var column = dTL1column[j];
+                    //            if (column.StartsWith("U_"))
+                    //            {
+                    //                oGeneralData.SetProperty(column, DTL1.GetValue(column, i));
+                    //            }
+                    //        }
+                    //        oSons = oGeneralData.Child("COR020001");
+                    //        for (int j = 0; j < DTL2.Rows.Count; j++)
+                    //        {
+                    //            if (DTL2.GetValue("Code", j).ToString().Equals(code))
+                    //            {
+                    //                var type = 0;
+                    //                for (int n = 0; n < oSons.Count; n++)
+                    //                {
+                    //                    oSon = oSons.Item(n);
+                    //                    if (oSon.GetProperty("U_PurchaseNo").ToString().Equals(DTL2.GetValue("U_PurchaseNo", j).ToString()))
+                    //                    {
+                    //                        type = 1;
+                    //                        for (int m = 0; m < dTL2column.Length; m++)
+                    //                        {
+                    //                            var column = dTL2column[m];
+                    //                            if (column.StartsWith("U_"))
+                    //                            {
+                    //                                oSon.SetProperty(column, DTL2.GetValue(column, j).ToString());
+                    //                            }
+                    //                        }
+                    //                        break;
+                    //                    }
+                    //                }
+                    //                if (type == 0)
+                    //                {
+                    //                    oSon = oSons.Add();
+                    //                    for (int m = 0; m < dTL2column.Length; m++)
+                    //                    {
+                    //                        var column = dTL2column[m];
+                    //                        if (column.StartsWith("U_"))
+                    //                        {
+                    //                            oSon.SetProperty(column, DTL2.GetValue(column, j).ToString());
+                    //                        }
+                    //                    }
+                    //                }
+                    //                list.Add(j);
+                    //            }
+                    //        }
+
+                    //        generalService.Update(oGeneralData);
+                    //    }
+                    //    else
+                    //    {
+                    //        oGeneralData = generalService.GetDataInterface(SAPbobsCOM.GeneralServiceDataInterfaces.gsGeneralData) as SAPbobsCOM.GeneralData;
+                    //        progressBar.Text = "正在添加:" + code;
+                    //        for (int j = 0; j < dTL1column.Length; j++)
+                    //        {
+                    //            var column = dTL1column[j];
+                    //            if (!column.Equals("LineId"))
+                    //            {
+                    //                oGeneralData.SetProperty(column, DTL1.GetValue(column, i));
+                    //            }
+                    //        }
+                    //        oSons = oGeneralData.Child("COR020001");
+                    //        for (int j = 0; j < DTL2.Rows.Count; j++)
+                    //        {
+                    //            if (DTL2.GetValue("Code", j).ToString().Equals(code))
+                    //            {
+                    //                oSon = oSons.Add();
+                    //                for (int m = 0; m < dTL2column.Length; m++)
+                    //                {
+                    //                    var column = dTL2column[m];
+                    //                    if (column.StartsWith("U_"))
+                    //                    {
+                    //                        oSon.SetProperty(column, DTL2.GetValue(column, j).ToString());
+                    //                    }
+                    //                }
+                    //                list.Add(j);
+                    //            }
+                    //        }
+                    //        generalService.Add(oGeneralData);
+                    //    }
+                    //    progressBar.Value = i;
+                    //    for (int j = list.Count - 1; j >= 0; j--)
+                    //    {
+                    //        DTL2.Rows.Remove(j);
+                    //    }
+                    //}
